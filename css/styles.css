@@ -12,16 +12,16 @@ body {
 }
 /* /////////Header Style */
 .logo {
-  color: #2e2f42;
-  font-family: Raleway;
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
-  line-height: 1.17px;
+  line-height: 1.17;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .logo span {
-  color: #4d5ae5;
+  color: #2e2f42;
 }
 .header-link {
   color: #2e2f42;
@@ -30,13 +30,26 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.header-link:hover {
+  color: #404bbf;
+}
+.header-link:focus {
+  color: #404bbf;
+}
+.address {
+  font-style: normal;
+}
 .adsress-contact {
   color: #434455;
   font-size: 16px;
-  font-style: normal;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+}
+.adsress-contact:hover {
+  color: #404bbf;
+}
+.adsress-contact:focus {
+  color: #404bbf;
 }
 .main-title {
   color: #fff;
@@ -47,6 +60,7 @@ body {
 }
 .main {
   background: #2e2f42;
+  font-family: "Roboto", sans-serif;
 }
 .main-btn {
   color: #fff;
@@ -54,19 +68,22 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border-radius: 4px;
   background: #4d5ae5;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
+
+.main-btn:focus {
+  background-color: #404bbf;
+}
+.main-btn:hover {
+  background: #404bbf;
+}
+
 /* /////////Header Style */
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
   margin: -1px;
   border: 0;
-  padding: 0;
 
   white-space: nowrap;
   clip-path: inset(100%);
@@ -120,11 +137,7 @@ body {
   letter-spacing: 0.02em;
 }
 .teamlist-backg {
-  border-radius: 0px 0px 4px 4px;
   background: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 /* TEAM SECTION */
 
@@ -164,15 +177,16 @@ body {
   background: #2e2f42;
 }
 .footer-logo {
-  color: #f4f4fd;
-  font-family: Raleway;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.footer-logo span {
-  color: #4d5ae5;
+.footer-logo-blue {
+  color: #f4f4fd;
 }
 .footer-descr {
   color: #f4f4fd;
